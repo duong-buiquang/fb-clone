@@ -1,0 +1,24 @@
+.sidebar {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 5px;
+  overflow-y: hidden;
+  flex-basis: 350px;
+  flex-shrink: 9999;
+  position: sticky;
+  top: 64.51px;
+}
+
+.sidebar:hover {
+  overflow-y: scroll;
+}
+
+.sidebar__top {
+  border-bottom: 1px solid #8080803b;
+}
+
+.sidebar:first-child img {
+  border-radius: 50%;
+}

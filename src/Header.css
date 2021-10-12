@@ -1,0 +1,146 @@
+:root {
+  --hoverIcon: #eff2f5;
+}
+
+.header {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+  padding: 4px 10px;
+  position: sticky;
+  top: 0;
+}
+
+.header__left {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__input {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 33px;
+}
+
+.header__left > img {
+  height: 40px;
+}
+
+.header__input > input {
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+}
+
+.header__middle {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.header__options > svg {
+  fill: gray;
+}
+
+.header__options:hover > svg {
+  fill: #2e81f4;
+}
+
+.header__options {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.header__options:hover {
+  background-color: var(--hoverIcon);
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: none;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.header__info > h4 {
+  font-size: 13px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__options--active > svg {
+  fill: #2e81f4;
+}
+
+.header__options--active,
+.header__options--active:hover {
+  border-bottom: 4px solid #2e81f4;
+  border-radius: 0;
+  background-color: inherit;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__input > svg {
+  fill: grey;
+}
+
+.header__info img {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+}
+
+.header__info {
+  border-radius: 61px;
+  height: 75%;
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+.header__info:hover {
+  background-color: var(--hoverIcon);
+}
+
+.header__right svg {
+  fill: black;
+  width: 20px;
+  height: 20px;
+}
+
+.header__right button {
+  background-color: var(--hoverIcon);
+}
+
+.header__right button:not(:last-child) {
+  margin-right: 5px;
+}
+.header__right button:hover {
+  background-color: #c6d0da;
+}
+
+.app__body {
+  background-color: #f0f2f5;
+}
+
+.header__middle > .header__options {
+  height: 100%;
+}

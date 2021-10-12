@@ -1,0 +1,29 @@
+.story {
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-size: cover;
+  width: 103px;
+  height: 183px;
+  box-shadow: 0 5px 17px -7px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  font-size: 12px;
+  transition-duration: 0.5ms;
+  transition: 0.5s;
+}
+
+.story > span {
+  text-align: center;
+  word-break: break-word;
+  margin: 10px;
+}
+
+.story:hover {
+  cursor: pointer;
+  opacity: 0.85;
+  transform: scale(1.05);
+}

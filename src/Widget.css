@@ -1,0 +1,6 @@
+.widget {
+  flex-basis: 350px;
+  max-width: 350px;
+  flex-shrink: 9999;
+  background-color: white;
+}
