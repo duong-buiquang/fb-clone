@@ -1,6 +1,7 @@
 .app__body {
   display: flex;
   justify-content: space-between;
+  overflow-y: scroll;
 }
 
 .post {

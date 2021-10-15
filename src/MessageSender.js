@@ -5,14 +5,23 @@ import {
   PhotoLibraryOutlined,
   VideocamOutlined,
 } from "@mui/icons-material";
+import { useContext } from "react";
+import FacebookContext from "./context/FacebookContext";
 
 export const MessageSender = () => {
+  const { setIsPosting } = useContext(FacebookContext);
+
   return (
     <div className="messageSender">
       <div className="messageSender__top">
         <Avatar />
         <form>
-          <input placeholder={"What's on your mind"} />
+          <input
+            placeholder={"What's on your mind"}
+            onClick={() => {
+              setIsPosting((prev) => !prev);
+            }}
+          />
         </form>
       </div>
       <div className="messageSender__bottom">

@@ -3,4 +3,8 @@
   max-width: 350px;
   flex-shrink: 9999;
   background-color: white;
+  align-self: flex-start;
+  position: sticky;
+  height: inherit;
+  top: 0;
 }
